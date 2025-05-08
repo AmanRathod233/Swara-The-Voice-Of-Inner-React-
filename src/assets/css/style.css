@@ -1,0 +1,5315 @@
+body {
+    margin: 0 !important;
+    overflow-x: hidden !important;
+    padding-right: 0 !important;
+    font-family: causten;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 1760px !important;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+/*Common CSS */
+
+@font-face {
+    font-family: rockwell;
+    src: url('public/assets/fonts/ROCK.TTF');
+}
+
+/* @font-face {
+    font-family: caustenregular;
+    src: url('public/assets/fonts/Causten-Regular.ttf');
+} */
+
+@font-face {
+    font-family: caustenbold;
+    src: url('public/assets/fonts/Causten-Bold.ttf');
+}
+
+@font-face {
+    font-family: causten;
+    src: url('public/assets/fonts/Causten-Medium.ttf');
+}
+
+@font-face {
+    font-family: caustensemibold;
+    src: url('public/assets/fonts/Causten-SemiBold.ttf');
+}
+
+
+/* @font-face {
+    font-family: HelveticaNowDisplay;
+    src: url(public/assetsfonts/HelveticaNowDisplay-Medium.ttf);
+}*/
+
+@font-face {
+    font-family: poorrichard;
+    src: url('public/assets/fonts/PoorRichardOpti.ttf');
+}
+
+.heading {
+    font-family: rockwell;
+    font-size: 60px;
+    margin: 0;
+}
+
+.heading_content {
+    font-family: causten;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.heading span {
+    font-family: poorrichard;
+}
+
+.button {
+    padding: 18px 30px;
+    width: max-content;
+    border-radius: 70px;
+    font-family: caustensemibold;
+    font-size: 24px;
+    line-height: 29px;
+    border: none !important;
+}
+
+ .popup-form {
+    position: fixed;
+    z-index: 10;
+    left: 25%;
+    top: 5%;
+    right: 50%;
+    bottom: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999999;
+  }
+
+
+  .popup-form .close-btn{
+    position: absolute;
+    right: 6%;
+    top: 4%;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .popup-form.active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+  
+  
+a {
+    text-decoration: none !important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+/*CSS For Header Section*/
+
+.header_section {
+    z-index: 9;
+    position: absolute;
+    left: 130px;
+    right: 130px;
+    top: 130px;
+}
+
+.header_nav_bar {
+    width: auto;
+    max-width: max-content;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 14px 20px !important;
+    gap: 9px;
+    border-radius: 60px;
+    justify-content: space-around !important;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+    gap: 10px;
+}
+
+.nav-item {
+    /* gap: 10px;
+    display: flex; */
+    font-family: caustensemibold;
+    font-size: 20px !important;
+}
+
+.nav-link.active {
+    background-color: #ff6666;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.nav-link:hover {
+    background: #ff6666;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.nav-link {
+    color: rgba(41, 41, 41, 1) !important;
+    line-height: 24px;
+    padding: 6px 20px !important;
+    border-radius: 60px;
+}
+
+.nav-link i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.navbar-nav li:last-child a.nav-link:hover,
+.navbar-nav li:last-child a.nav-link:focus {
+    background-color: rgba(255, 255, 255, 1) !important;
+    color: rgba(41, 41, 41, 1) !important;
+}
+
+
+
+.nav_contact{
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.nav_contact p{
+    margin-bottom: 10px;
+}
+
+.nav_contact a{
+color: rgba(41, 41, 41, 1) !important;
+font-size: 20px !important;
+font-family: caustensemibold;
+}
+
+.nav_contact i{
+    padding-right: 8px;
+}
+
+
+/*CSS For Hero Section */
+.hero_section {
+    padding-top: 80px;
+}
+
+/* .hero_section .container {
+    position: relative;
+    padding-top: 320px !important;
+} */
+
+.hero_section_background {
+    background-color: #f0f0f0;
+    border-radius: 60px;
+    position: relative;
+    padding-top: 320px !important;
+}
+
+.hero_section_heading h1 {
+    font-size: 72px;
+    font-family: rockwell;
+    line-height: 110%;
+}
+
+.hero_section_left {
+    padding-left: 50px;
+    position: relative;
+    top: 6px;
+}
+
+
+.hero_section_content p {
+    font-size: 24px;
+    font-family: causten;
+    line-height: 29px;
+    color: rgba(41, 41, 41, 1);
+    margin-bottom: 30px;
+}
+
+.hero_section_btn {
+    background: rgba(255, 102, 102, 1);
+    color: rgba(248, 248, 248, 1)
+}
+
+.hero_section_btn:hover {
+    background: rgba(51, 102, 102, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero_section_img img {
+    border-radius: 60px;
+}
+
+/*CSS for from_schoolbooks_to_soul_healing_section*/
+
+.from_schoolbooks_to_soul_healing_section {
+    margin: 100px 0px;
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part {
+    padding: 60px 0px 0px 60px;
+    background: rgba(51, 102, 102, 1);
+    border-radius: 40px;
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part_heading .heading {
+    padding-bottom: 20px;
+    color: rgba(248, 248, 248, 1);
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part_text {
+    font-family: causten;
+    font-size: 26px;
+    padding-bottom: 26px;
+    line-height: 31px;
+    color: rgba(248, 248, 248, 1);
+}
+
+.from_schoolbooks_to_soul_healing_section_img img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 60px;
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part_points {
+    padding-bottom: 53px;
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part_points li img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part_points span {
+    display: block;
+}
+
+
+.from_schoolbooks_to_soul_healing_section_right_part_points li {
+    list-style: none;
+    font-size: 26px;
+    font-family: causten;
+    color: rgba(248, 248, 248, 1);
+    display: flex;
+    align-items: flex-start;
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part_btn {
+    background: rgba(248, 248, 248, 1);
+    color: rgba(41, 41, 41, 1);
+}
+
+.from_schoolbooks_to_soul_healing_section_right_part_btn:hover {
+    background: rgba(255, 102, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+/* CSS for Numbers Speak Louder Than Doubts */
+
+.number_speak_louder_than_doubts_section {
+    margin: 100px 0px;
+}
+
+.number_speak_louder_than_doubts_section .col-lg-7 {
+    padding: 0 !important;
+}
+
+.number_speak_louder_than_doubts_heading {
+    margin-bottom: 50px;
+}
+
+.number_speak_louder_than_doubts_heading .heading_content {
+    font-size: 26px;
+    line-height: 31px;
+    padding: 10px 0px 30px;
+}
+
+.number_speak_louder_than_doubts_btn {
+    background-color: rgba(255, 102, 102, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.number_speak_louder_than_doubts_btn:hover {
+    background-color: rgba(51, 102, 102, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+.number_speak_louder_than_doubts_box {
+    background-color: rgba(240, 240, 240, 1);
+    padding: 30px 0px 0px 40px;
+    border-radius: 16px;
+}
+
+.number_speak_louder_than_doubts_box_heading .heading_content {
+    padding-bottom: 48px;
+    font-family: caustensemibold;
+}
+
+.number_speak_louder_than_doubts_box_img {
+    display: flex;
+    justify-content: end;
+}
+
+/* CSS for Pick Your Tharapy Section*/
+
+.pick_your_tharapy_section_heading {
+    margin-bottom: 50px;
+}
+
+.pick_your_tharapy_section_box1 {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.1)),
+        url('public/assets/Images/front-view-psychologist-patient1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 369px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.pick_your_tharapy_section_box1:hover {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)),
+        url('public/assets/Images/front-view-psychologist-patient1.webp');
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.pick_your_tharapy_section_box2 {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.1)),
+        url('public/assets/Images/teen_tharapy.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 369px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pick_your_tharapy_section_box2:hover {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)),
+        url('public/assets/Images/teen_tharapy.webp');
+    transition: all 0.5s ease-in-out;
+}
+
+.pick_your_tharapy_section_box3 {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.1)),
+        url('public/assets/Images/full-shot-couple-undergoing-therapy1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 369px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.pick_your_tharapy_section_box3:hover {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)),
+        url('public/assets/Images/full-shot-couple-undergoing-therapy1.webp');
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.pick_your_tharapy_section_box4 {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.1)),
+        url('public/assets/Images/2149130443 1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 369px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.pick_your_tharapy_section_box4:hover {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6)),
+        url('public/assets/Images/2149130443 1.webp');
+    transition: all 0.5s ease-in-out;
+}
+
+.pick_your_tharapy_section_box5 {
+    background-color: rgba(51, 102, 102, 1);
+    height: 100%;
+    max-height: 369px;
+    border-radius: 30px;
+    position: relative;
+    padding: 40px;
+}
+
+.pick_your_tharapy_section_box5:hover {
+    background-color: rgba(255, 102, 102, 1);
+    transition: all 0.4s ease-in-out;
+}
+
+.pick_your_tharapy_section_box_content {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pick_your_tharapy_section_box_content p {
+    margin: 0;
+    font-family: caustensemibold;
+    font-size: 28px;
+    line-height: 34px;
+    color: rgba(248, 248, 248, 1);
+}
+
+.pick_your_tharapy_section_box_heading {
+    font-family: rockwell;
+    font-size: 50px;
+    color: rgba(248, 248, 248, 1);
+    margin: 0;
+    line-height: 60px;
+    padding-bottom: 18px;
+}
+
+.pick_your_tharapy_section_box_information {
+    font-family: causten;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+    color: rgba(248, 248, 248, 1);
+}
+
+.pick_your_tharapy_section_box_link {
+    padding-top: 70px;
+    padding-right: 30px;
+}
+
+.pick_your_tharapy_section_box_link a {
+    font-family: causten;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    color: rgba(248, 248, 248, 1);
+    line-height: 26px;
+}
+
+.pick_your_tharapy_section_box_link a p {
+    text-decoration: underline !important;
+}
+
+.pick_your_tharapy_section_box_link p {
+    margin: 0;
+}
+
+
+/*CSS For Expert Section */
+
+.expert_section {
+    margin: 100px 0px;
+    padding: 0px !important;
+}
+
+.expert_section .container-fluid {
+    padding: 0 !important;
+}
+
+.expert_carousel {
+    display: flex;
+    padding: 0 !important;
+}
+
+.expert_carousel .card {
+    margin: 10px;
+    position: relative;
+    max-width: 361px;
+    width: 100%;
+    height: 100%;
+    min-height: 329px;
+    border: none !important;
+    border-radius: 21px;
+    background-color: #f0f0f0;
+    margin-top: 100px;
+}
+
+.slick-list {
+    padding: 10px 0;
+}
+
+.card-image {
+    position: absolute;
+    top: -83px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 9;
+}
+
+.card:hover .card-content {
+    background: rgba(255, 102, 102, 1) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.expert_section .card-content {
+    background: rgba(51, 102, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 21px;
+    position: absolute;
+    bottom: 8px;
+    left: 11px;
+    right: 11px;
+    z-index: 9;
+}
+
+.expert_section .card-content:hover {
+    background: rgba(255, 102, 102, 1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.expert_section .card-content a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.expert_carousel .card-content .doctor_name {
+    font-family: causten;
+    font-size: 23px;
+    line-height: 27px;
+}
+
+.expert_carousel .card-content .doctor_details .name_tharapy {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    font-family: causten;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.expert_carousel .card-content .doctor_details .doctor_degree {
+    font-family: causten;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 3px;
+    padding-right: 10px;
+}
+
+.card-content p {
+    margin: 0;
+}
+
+/* CSS for From Swara Heart*/
+
+.from_swara_heart_section_left_part {
+    background-color: rgba(51, 102, 102, 1);
+    border-radius: 60px;
+    padding: 135px 268px 135px 60px;
+}
+
+.from_swara_heart_section_left_part .heading {
+    color: rgba(248, 248, 248, 1);
+}
+
+.from_swara_heart_section_left_part .heading_content {
+    padding: 10px 0px 20px 0px;
+    color: rgba(248, 248, 248, 1);
+}
+
+.from_swara_heart_section_left_part_points p {
+    font-family: causten;
+    font-size: 26px;
+    line-height: 38px;
+    margin: 0;
+    color: rgba(248, 248, 248, 1);
+}
+
+.from_swara_heart_section_left_part_points p img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.from_swara_heart_section img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/*CSS For People Who Took the Leap */
+
+.testimonial_section {
+    margin: 100px 0px;
+    display: none;
+}
+
+.testimonial_heading {
+    margin-bottom: 50px;
+}
+
+.testimonial_heading .heading {
+    padding-bottom: 10px;
+}
+
+.testimonial_section .carousel-container {
+    position: relative;
+    max-width: 1892px !important;
+    margin-left: 80px !important;
+}
+
+.testimonial_section .testimonial_carousel .slick-slide {
+    padding: 0px 10px;
+}
+
+.testimonial_section .testimonial_carousel .slick-slide img {
+    border-radius: 14px;
+}
+
+.testimonial_section .card {
+    border-radius: 0 !important;
+    overflow: hidden;
+    border: none !important;
+    max-height: 476px;
+    height: 100%;
+}
+
+.testimonial_section .card-img-overlay {
+    padding: 30px !important;
+}
+
+.testimonial_section .card-title {
+    font-size: 28px;
+    line-height: 34px;
+    font-family: rockwell;
+}
+
+.testimonial_section .card-text {
+    color: rgba(41, 41, 41, 1);
+    font-size: 22px;
+    font-family: causten;
+    line-height: 26px;
+}
+
+.play_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.custom-prev {
+    opacity: 0;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 10% !important;
+    background: no-repeat;
+    border: none;
+    height: 100%;
+}
+
+.custom-next {
+    opacity: 0;
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    top: 0;
+    width: 10% !important;
+    background: no-repeat;
+    border: none;
+    height: 100%;
+}
+
+/*CSS For Sliding review Section */
+.sliding_review_section {
+    margin: 100px 0px;
+}
+.expert_container {
+    max-width: 1925px !important;
+    width: 100% !important;
+    margin-left: 80px !important;
+}
+
+.sliding_review_section_heading .heading {
+    padding-bottom: 10px;
+}
+
+.sliding_review_section_heading {
+    margin-bottom: 50px;
+}
+
+.slide_review {
+    margin-left: 165px !important;
+}
+
+.sliding_review_1 {
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollMarquee1 40s linear infinite;
+
+}
+
+.sliding_review_2 {
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollMarquee 40s linear infinite;
+}
+
+.sliding_review_box {
+    border: 1.17px solid rgba(221, 221, 221, 1);
+    border-radius: 16.33px;
+    padding: 46px 23.33px 46px 23.33px;
+    display: inline-block;
+    width: 383px;
+}
+
+@keyframes scrollMarquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollMarquee1 {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+
+.slider-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+
+
+.sliding_review_box_content {
+    font-size: 22px;
+    font-family: causten;
+    line-height: 26px;
+    color: rgba(41, 41, 41, 1);
+}
+
+.sliding_review_box_personal_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 34px;
+}
+
+.sliding_review_box_img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliding_review_box_personal_info p {
+    font-family: causten;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+    padding-left: 6px;
+}
+
+.sliding_review_box_star_rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliding_review_box_star_rating .fa {
+    color: gold;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+
+/*CSS For Support Company Section */
+
+.support_company_section {
+    margin: 100px 0px;
+    padding: 100px 0px !important;
+    background-color: rgba(255, 237, 237, 1);
+}
+
+.support_company_section_heading .heading {
+    padding-bottom: 10px;
+}
+
+.support_company_section .heading_content {
+    font-family: causten;
+    line-height: 35px;
+}
+
+.support_company_section .slick-slide {
+    padding-right: 100px;
+}
+
+.custom-prev {
+    opacity: 0;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 10% !important;
+    background: no-repeat;
+    border: none;
+    height: 100%;
+}
+
+.custom-next {
+    opacity: 0;
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    top: 0;
+    width: 10% !important;
+    background: no-repeat;
+    border: none;
+    height: 100%;
+}
+
+.slick-prev,
+.slick-next {
+    width: 10% !important;
+    height: 100% !important;
+    background: transparent !important;
+    z-index: 100;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+
+/*CSS Foe BLog Section*/
+
+.blog_section_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.blog_section_heading img {
+    animation: beat 2.5s ease-in-out infinite;
+}
+
+@keyframes beat {
+    from {
+        transform: scale(1.1)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
+}
+
+.blog_section_heading .heading {
+    padding-bottom: 10px;
+}
+
+.blog_section_btn {
+    background-color: rgba(255, 102, 102, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.blog_section_btn:hover {
+    background-color: rgba(51, 102, 102, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+.blog_box img {
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog_heading {
+    font-family: rockwell;
+    font-size: 30px;
+    line-height: 33px;
+    padding-top: 30px;
+}
+
+.blog_heading a {
+    color: rgba(41, 41, 41, 1);
+}
+
+.blog_content {
+    font-family: causten;
+    font-size: 20px;
+    line-height: 29px;
+    padding-bottom: 20px;
+}
+
+.blog_btn {
+    font-family: rockwell;
+    font-size: 20px;
+    color: rgba(51, 102, 102, 1);
+}
+
+.blog_box:hover .blog_btn {
+    color: rgba(255, 102, 102, 1);
+    transition: all 0.4s ease-in-out;
+}
+
+/*CSS For Book A Free Session Section */
+
+.book_free_session_section {
+    margin: 100px 0;
+}
+
+.book_free_session_box {
+    background: url('public/assets/Images/bg-img.webp'), rgba(51, 102, 102, 1);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 71px 122px 70px 120px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_free_session_box_heading {
+    font-family: rockwell;
+    font-size: 60px;
+    line-height: 72px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.book_free_session_box_content {
+    font-size: 24px;
+    line-height: 35px;
+    font-family: causten;
+    color: rgba(255, 255, 255, 1);
+}
+
+.book_free_session_box_btn {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(41, 41, 41, 1);
+}
+
+.book_free_session_box_btn:hover {
+    background-color: rgba(255, 102, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+/*CSS For Footer Section */
+
+.footer_section {
+    background-color: rgba(240, 240, 240, 1);
+    padding: 100px;
+}
+
+
+.footer_section .row{
+    align-items: center;
+}
+
+
+.footer_section .container {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 90px 90px 62px 90px !important;
+    border-radius: 70px;
+}
+
+.footer_logo_content {
+    font-family: causten;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 20px;
+}
+
+.footer_contact_detail {
+    margin: 16px 0;
+}
+
+.footer_contact_detail a {
+    color: rgba(41, 41, 41, 1);
+}
+
+.footer_contact_detail i {
+    padding-right: 10px;
+}
+
+.footer_contact_detail p {
+    font-family: causten;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.footer_subscribe{
+    display: flex;
+    width: 80%;
+}
+
+.footer_subscribe input {
+    border-radius: 19px;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgba(240, 240, 240, 1);
+    border: none;
+    font-family: causten !important;
+    font-size: 18px !important;
+    text-transform: capitalize !important;
+    color: rgba(41, 41, 41, 1) !important;
+    line-height: 35px;
+}
+
+.footer_subscribe input:focus-visible {
+    outline: 2px solid rgba(255, 102, 102, 1);
+}
+
+.footer_link_heading {
+    font-family: caustenbold;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 23px;
+}
+
+
+.footer_section .footer_subscribe button {
+    font-family: causten !important;
+    font-size: 18px !important;
+    border-radius: 19px !important;
+    margin-left: 10px !important;
+    color: rgba(240, 240, 240, 1);
+    text-transform: uppercase !important;
+    background-color: rgba(255, 102, 102, 1);
+    padding: 12px 14px !important;
+    border: none;
+    line-height: 28 px;
+}
+
+.footer_section .footer_subscribe button:hover {
+    background-color: rgba(51, 102, 102, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.footer_link {
+    list-style: none;
+    padding-bottom: 16px;
+
+}
+
+.footer_link a:hover {
+    color: rgba(255, 102, 102, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.footer_link a {
+    color: rgba(41, 41, 41, 1);
+    font-family: causten;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.footer_about_part {
+    padding-left: 0px !important;
+}
+
+.disclaimer{
+    border: 1px solid rgba(41, 41, 41, 1);
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.disclaimer ul li{
+    color: rgba(41, 41, 41, 1) !important;
+    font-family: causten !important;
+}
+
+
+
+.disclaimer_heading{
+    font-family: rockwell;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: rgba(41, 41, 41, 1);
+}
+
+.disclaimer_content{
+    font-size: 16px;
+    font-family: 'causten';
+    color: rgba(41, 41, 41, 1);
+}
+
+.copyright_section {
+    padding-top: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrigt_detail {
+    font-family: causten;
+    font-size: 22px;
+
+    line-height: 30px;
+}
+
+.copyrigt_detail a {
+    color: rgba(41, 41, 41, 1);
+}
+
+.copyright_section:focus-visible {
+    outline: none;
+}
+
+.footer_social_media_icon {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_social_media_icon img {
+    height: 24px;
+    width: 24px;
+}
+
+.footer_social_media_icon a i {
+    color: rgba(41, 41, 41, 1);
+    font-size: 25px;
+    background-color: #e7e7e7;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
+.footer_social_media_icon a i:hover {
+    background-color: #ff6666;
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+/* WhatsApp button positioning */
+.whatsapp_icon .whatapp_icon_link {
+    position: fixed;
+    bottom: 30px; /* initial position */
+    right: 30px;
+    z-index: 9998;
+    width: 50px;
+    height: 50px;
+    background-color: #25d466;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    display: flex; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: bottom 0.3s ease; /* smooth transition */
+}
+
+
+/* CSS For Responsive Design*/
+
+/* @media screen and (max-width:1800px) {
+    .container{
+        max-width: 1640px !important;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .container{
+        max-width: 1480px !important;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    .container{
+        max-width: 1360px !important;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1399px){
+    .container{
+        max-width: 1180px !important;
+    }
+} */
+
+
+/*CSS For Screen 1700px to 1799px*/
+@media screen and (min-width:1700px) and (max-width:1799px) {
+
+    /* section{
+        padding: 0px 20px !important;
+    } */
+
+    .nav-link {
+        padding: 6px 16px !important;
+    }
+
+    .header_section {
+        top: 90px;
+        left: 50px;
+        right: 50px;
+    }
+
+    .hero_section {
+        padding-top: 35px !important;
+    }
+
+    .expert_section .container-fluid {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:1799px) {
+
+    .container {
+        padding: 0px 20px !important;
+    }
+}
+
+
+
+
+/* CSS For Screen Size From 1200px to 1599px */
+@media screen and (min-width:1200px) and (max-width:1599px) {
+
+    .row {
+        margin: 0 !important;
+    }
+
+
+    .heading {
+        font-size: 45px;
+    }
+
+    .heading_content {
+        font-size: 22px;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 18px;
+
+    }
+
+    .slick-next {
+        right: 0 !important;
+    }
+
+    .slick-prev {
+        left: 0 !important;
+    }
+
+
+    /* CSS For Header  Section*/
+
+    .header_section {
+        left: 30px;
+        right: 30px;
+        top: 60px;
+    }
+
+    .header_section img {
+        width: 45%;
+    }
+
+    .nav-link {
+        padding: 3px 11px !important;
+    }
+
+    .nav-item {
+        font-size: 16px !important;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .navbar {
+        padding: 8px 20px !important;
+    }
+
+
+    /*CSS For Hero Section */
+
+    .hero_section {
+        padding-top: 20px !important;
+    }
+
+    .hero_section_background {
+        padding-top: 200px !important;
+    }
+
+    .hero_section_left {
+        padding-left: 30px;
+    }
+
+    .hero_section_content p {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+
+    .hero_section_heading h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .hero_section_content p br {
+        display: none;
+    }
+
+    .hero_section img {
+        width: 100%;
+    }
+
+    /*CSS For From Schoolbooks To Soul Healing Section */
+    .from_schoolbooks_to_soul_healing_section {
+        margin: 80px 0px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part {
+        padding: 40px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_text br {
+        display: none;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_text {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_points li {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    /* .number_speak_louder_than_doubts_section .row .col-lg-7 .col-md-4{
+        padding:0px 10px !important;
+    } */
+
+    /*CSS For Pick Your Tharapy Section*/
+
+    .pick_your_tharapy_section_box_content p {
+        font-size: 24px;
+    }
+
+    .pick_your_tharapy_section_box_heading {
+        font-size: 45px;
+        line-height: 50px;
+        padding-bottom: 15px;
+    }
+
+    .pick_your_tharapy_section_heading {
+        margin-bottom: 40px;
+    }
+
+    .pick_your_tharapy_section_box5 {
+        padding: 30px;
+    }
+
+    .pick_your_tharapy_section_box_link {
+        padding-top: 30px;
+        padding-right: 15px;
+    }
+
+    .pick_your_tharapy_section_box_link a {
+        font-size: 22px;
+    }
+
+    .pick_your_tharapy_section_box_information br {
+        display: none;
+    }
+
+    /*CSS For Expert Section */
+    .expert_section .container-fluid {
+        padding: 0;
+    }
+
+    .expert_carousel {
+        margin-left: 0px;
+        padding: 0 !important;
+    }
+
+    .expert_section {
+        margin: 80px 0px;
+        padding: 0 !important;
+    }
+
+    /* CSS For From Swara Heart Section*/
+
+    .from_swara_heart_section_left_part {
+        padding: 75px 60px;
+    }
+
+    /*CSS For Testimonial Section */
+
+    .carousel-container {
+        margin-left: 0 !important;
+    }
+
+    .testimonial_section {
+        margin: 80px 0px;
+        overflow: hidden !important;
+    }
+
+    .testimonial_section {
+        margin-bottom: 60px;
+    }
+
+    .testimonial_section .card-img-overlay {
+        padding: 20px !important;
+    }
+
+    .testimonial_section .card-text {
+        font-size: 20px;
+    }
+
+    .play_icon img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 25% !important;
+    }
+
+    /*CSS For Sliding Review*/
+
+    .sliding_review_section_heading {
+        margin-bottom: 40px;
+    }
+
+    .sliding_review_box {
+        padding: 25px 20px;
+        width: 350px;
+    }
+
+    .sliding_review_box_content {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .sliding_review_box_personal_info {
+        padding-top: 20px;
+    }
+
+    .sliding_review_box_personal_info p {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    /*CSS For Support Company Section*/
+
+    .support_company_section .container-fluid {
+        padding: 0;
+    }
+
+    .support_company_section {
+        margin: 60px 0px;
+        padding: 80px 0px !important;
+    }
+
+    /*CSS For Blog Section*/
+    .book_free_session_section {
+        margin: 60px 0px;
+    }
+
+    .blog_section .blog_content br {
+        display: none;
+    }
+
+    /*CSS For Book A Free Session Section */
+    .book_free_session_box_heading {
+        font-size: 55px;
+    }
+
+    .book_free_session_box {
+        padding: 55px 70px;
+    }
+
+    /*CSS For Footer Section */
+
+    .footer_section {
+        padding: 55px;
+    }
+
+    .footer_section .row{
+    align-items: center;
+    }
+
+    .footer_link {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 14px;
+    }
+
+    .footer_link a {
+        color: rgba(41, 41, 41, 1);
+        font-family: causten;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .footer_section .container {
+        padding: 50px 40px 50px 40px !important;
+    }
+
+    .footer_section input {
+        width: 65%;
+    }
+
+    .copyrigt_detail {
+        font-size: 18px;
+    }
+
+    .footer_social_media_icon a i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+}
+
+/* CSS For Screen Size From 1500px to 1599px */
+@media screen and (min-width:1500px) and (max-width:1599px) {
+
+    .header_section img {
+        width: 45%;
+    }
+
+    .nav-link {
+        padding: 6px 13px !important;
+    }
+
+    .nav-item {
+        font-size: 18px !important;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .navbar {
+        padding: 12px 20px !important;
+    }
+
+
+    /*CSS For Hero Section */
+
+    .hero_section {
+        padding-top: 25px !important;
+    }
+
+    .hero_section_background {
+        padding-top: 200px !important;
+    }
+
+    .hero_section_left {
+        padding-left: 40px;
+    }
+
+    .hero_section_content p {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 28px;
+    }
+
+    .hero_section_heading h1 {
+        font-size: 57px;
+        line-height: 62px;
+    }
+
+    .hero_section_content p br {
+        display: none;
+    }
+
+    .hero_section img {
+        width: 100%;
+    }
+
+}
+
+/*CSS For Screen Size From 992px to 1199px*/
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    .row {
+        margin: 0 !important;
+    }
+
+    /* section{
+        padding: 0px 20px !important;
+    } */
+
+    .heading {
+        font-size: 42px;
+    }
+
+    .heading_content {
+        font-size: 22px;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 20px;
+
+    }
+
+
+    .slick-next {
+        right: 0 !important;
+    }
+
+    .slick-prev {
+        left: 0 !important;
+    }
+
+    .popup-form{
+        top: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+    }
+
+    .popup-form .close-btn{
+        top: 0%;
+        right:5%;
+    }
+
+
+
+
+    /* CSS For Header  Section*/
+
+    .header_section {
+        left: 30px;
+        right: 30px;
+        top: 50px;
+    }
+
+    .navbar {
+        background: none;
+    }
+
+    .offcanvas-backdrop {
+        height: 115vh !important;
+    }
+
+    .navbar-toggler {
+        font-size: 35px !important;
+        color: black;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+    }
+
+    .offcanvas-header img {
+        width: 80%;
+    }
+
+    /*CSS For Hero Section*/
+
+    .hero_section_background {
+        padding-top: 260px !important;
+    }
+
+    .hero_section .row {
+        gap: 20px;
+    }
+
+    .hero_section {
+        padding-top: 30px !important;
+    }
+
+    .hero_section_heading h1 {
+        font-size: 68px;
+        line-height: 80px;
+    }
+
+    .hero_section_left {
+        padding-left: 30px;
+        top: 0;
+    }
+
+    .hero_section_img img {
+        width: 100%;
+    }
+
+    .hero_section_content p br {
+        display: none;
+    }
+
+    /*CSS For From Schoolbooks To Soul Healing Section */
+    .from_schoolbooks_to_soul_healing_section {
+        margin: 60px 0px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part {
+        padding: 40px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_text br {
+        display: none;
+    }
+
+    /* CSS For Number Speak Louder Than Doubts Section */
+
+    .number_speak_louder_than_doubts_section {
+        margin: 60px 0px;
+    }
+
+
+    /*CSS For Pick Your Tharapy Section*/
+    .from_schoolbooks_to_soul_healing_section .row {
+        flex-direction: column-reverse !important;
+        gap: 20px;
+    }
+
+    .pick_your_tharapy_section_box_content p {
+        font-size: 24px;
+    }
+
+    .pick_your_tharapy_section_box_heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .pick_your_tharapy_section_box_information br {
+        display: none;
+    }
+
+    .pick_your_tharapy_section_box5 {
+        padding: 30px;
+    }
+
+    .pick_your_tharapy_section_box_link {
+        padding-top: 40px;
+        padding-right: 15px;
+    }
+
+    .pick_your_tharapy_section_box_link a {
+        font-size: 20px;
+    }
+
+    /*CSS For Expert Secton */
+
+    .expert_section .expert_carousel {
+        margin-left: 0px;
+    }
+
+    .expert_section .container-fluid {
+        padding: 0;
+    }
+
+    .expert_carousel {
+        margin-left: 0px;
+        padding: 0 !important;
+    }
+
+    /* CSS For From Swara Heart Section*/
+
+    .from_swara_heart_section_left_part {
+        padding: 60px 50px;
+    }
+
+    /*CSS For Testimonial Section */
+
+    .carousel-container {
+        margin-left: 0 !important;
+    }
+
+    .testimonial_section {
+        margin: 60px 0px;
+        overflow: hidden !important;
+    }
+
+    .testimonial_section {
+        margin-bottom: 40px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 25% !important;
+    }
+
+    /*CSS For Silding Review*/
+
+    .sliding_review_box {
+        padding: 40px 20.33px 40px 20.33px;
+        width: 360px;
+    }
+
+
+
+    /*CSS For Support Company Section */
+
+    .support_company_section {
+        margin: 60px 0px;
+        padding: 70px 0px !important;
+        overflow-x: hidden !important;
+    }
+
+    .support_company_section .container-fluid {
+        padding: 0;
+    }
+
+    /*CSS For Blog Section */
+
+    .blog_section_heading_left .heading_content br {
+        display: none;
+    }
+
+    .blog_section_heading {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 30px;
+    }
+
+    .blog_heading {
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 25px;
+    }
+
+    .blog_content br {
+        display: none;
+    }
+
+    .blog_content {
+        padding-top: 0;
+        padding-bottom: 25px;
+        font-size: 18px;
+    }
+
+    /*CSS For Book Free Session Section */
+
+    .book_free_session_section {
+        margin: 60px 0;
+    }
+
+    .book_free_session_box {
+        padding: 50px;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .book_free_session_box_heading {
+        font-size: 42px;
+        line-height: 55px;
+    }
+
+    .book_free_session_box_content br {
+        display: none;
+    }
+
+    /*CSS For Footer Section */
+
+    .footer_section {
+        padding: 75px;
+    }
+
+    .footer_logo_content br {
+        display: none;
+    }
+
+    .footer_section .container {
+        padding: 40px !important;
+    }
+
+    .footer_link_heading {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .footer_link {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .copyright_section {
+        padding-top: 65px;
+    }
+
+    .footer_social_media_icon a i {
+        height: 45px;
+        width: 45px;
+        font-size: 19px;
+    }
+}
+
+
+/*Screen Size to 991px*/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .row {
+        margin: 0 !important;
+    }
+
+    .heading {
+        font-size: 42px;
+    }
+
+    .heading_content {
+        font-size: 22px;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 22px;
+
+    }
+
+    .slick-next {
+        right: 0 !important;
+    }
+
+    .slick-prev {
+        left: 0 !important;
+    }
+
+    .popup-form{
+        top: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+    }
+
+    .popup-form .close-btn{
+        top: 1%;
+        right: 7%;
+    font-size: 35px;
+    }
+
+
+    /* CSS For Header  Section*/
+
+    .header_section {
+        left: 25px;
+        right: 25px;
+        top: 100px;
+    }
+
+    .navbar {
+        background: none;
+    }
+
+    .offcanvas-backdrop {
+        height: 115vh !important;
+    }
+
+    .navbar-toggler {
+        font-size: 35px !important;
+        color: black;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+    }
+
+    .offcanvas-header img {
+        width: 80%;
+    }
+
+    /*CSS For Hero Section*/
+
+    .hero_section_background {
+        padding-top: 240px !important;
+    }
+
+    .hero_section .row {
+        gap: 20px;
+    }
+
+    .hero_section {
+        padding-top: 50px !important;
+    }
+
+    .hero_section_heading h1 {
+        font-size: 68px;
+        line-height: 81px;
+    }
+
+    .hero_section_content p {
+        font-size: 22px;
+    }
+
+    .hero_section_left {
+        padding-left: 30px;
+        top: 0;
+    }
+
+    .hero_section_img img {
+        width: 100%;
+    }
+
+    .hero_section_content p br {
+        display: none;
+    }
+
+    /*CSS For From Schoolbooks To Soul Healing Section */
+
+    .from_schoolbooks_to_soul_healing_section_right_part_heading .heading br {
+        display: none;
+    }
+
+    .from_schoolbooks_to_soul_healing_section {
+        margin: 60px 0px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part {
+        padding: 40px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_text {
+        font-size: 22px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_points li {
+        font-size: 22px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_text br {
+        display: none;
+    }
+
+    /* CSS For Number Speak Louder Than Doubts Section */
+
+    .number_speak_louder_than_doubts_section .row .col-md-4 {
+        padding: 0px 10px !important;
+    }
+
+    .number_speak_louder_than_doubts_section {
+        margin: 60px 0px;
+    }
+
+    .number_speak_louder_than_doubts_heading .heading br {
+        display: none;
+    }
+
+
+    /*CSS For Pick Your Tharapy Section*/
+    .from_schoolbooks_to_soul_healing_section .row {
+        gap: 20px;
+        flex-direction: column-reverse !important;
+    }
+
+    .pick_your_tharapy_section_box_content p {
+        font-size: 22px;
+    }
+
+    .number_speak_louder_than_doubts_heading {
+        margin-bottom: 25px;
+    }
+
+    .pick_your_tharapy_section_heading {
+        margin-bottom: 20px;
+    }
+
+    .pick_your_tharapy_section_box_heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .pick_your_tharapy_section_box5 {
+        padding: 35px;
+        margin-top: 20px;
+        height: 100%;
+    }
+
+    .pick_your_tharapy_section_box_link {
+        padding-top: 60px;
+        padding-right: 15px;
+    }
+
+    .pick_your_tharapy_section_box_heading br {
+        display: none;
+    }
+
+    /*CSS For Expert Secton */
+
+    .expert_section {
+        margin: 60px 0px;
+    }
+
+    .expert_section .expert_carousel {
+        margin-left: 0px;
+    }
+
+
+    /* CSS For From Swara Heart Section*/
+    .from_swara_heart_section .row {
+        gap: 20px;
+    }
+
+    .from_swara_heart_section_left_part {
+        padding: 60px 50px;
+    }
+
+    /*CSS For Testimonial Section */
+
+    .carousel-container {
+        margin-left: 0 !important;
+    }
+
+    .testimonial_section {
+        margin: 60px 0px;
+        overflow-x: hidden !important;
+    }
+
+    .testimonial_section {
+        margin-bottom: 40px;
+    }
+
+    .testimonial_heading {
+        margin-bottom: 20px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 25% !important;
+    }
+
+    /*CSS For Silding Review*/
+
+    .sliding_review_box {
+        padding: 35px 18px 35px 18px;
+        width: 345px;
+    }
+
+    .sliding_review_section_heading {
+        margin-bottom: 20px;
+    }
+
+    /*CSS For Support Company Section */
+
+    .support_company_section {
+        margin: 60px 0px;
+        padding: 70px 0px;
+        overflow-x: hidden !important;
+    }
+
+    /*CSS For Blog Section */
+
+   
+    .blog_section_spacing {
+        padding-bottom: 25px;
+    }
+
+    .blog_section_heading_left .heading_content br {
+        display: none;
+    }
+
+    .blog_section_heading {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 0px;
+    }
+
+    .blog_heading {
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 15px;
+    }
+
+    .blog_content br {
+        display: none;
+    }
+
+    .blog_content {
+        padding-top: 0;
+        padding-bottom: 5px;
+        font-size: 22px;
+    }
+
+    .blog_btn {
+        font-size: 20px;
+    }
+
+    .blog_section_btn{
+        margin-bottom: 15px;
+    }
+
+    /*CSS For Book Free Session Section */
+
+    .book_free_session_section {
+        margin: 60px 0;
+    }
+
+    .book_free_session_box {
+        padding: 50px;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .book_free_session_box_heading {
+        font-size: 42px;
+        line-height: 55px;
+    }
+
+    .book_free_session_box_content br {
+        display: none;
+    }
+
+    .book_free_session_box_content {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    /*CSS For Footer Section */
+
+    .footer_section {
+        padding: 60px;
+    }
+
+
+    .footer_section .container {
+        padding: 30px !important;
+    }
+
+    .footer_subscribe {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+
+    .footer_link_heading {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .footer_link {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+
+    .copyright_section {
+        padding-top: 30px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer_social_media_icon a i {
+        height: 45px;
+        width: 45px;
+        font-size: 18px;
+    }
+
+}
+
+/*CSS For Moblie Screen Or Below 600 px*/
+
+@media screen and (max-width:600px) {
+
+    .container {
+        padding: 0px 15px !important;
+    }
+
+    .row {
+        margin: 0 !important;
+    }
+
+    .row>* {
+        padding: 0px !important;
+    }
+
+    .heading {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    .heading_content {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .button {
+        padding: 10px 18px;
+        font-size: 18px;
+
+    }
+
+    .slick-next {
+        right: 0 !important;
+    }
+
+    .slick-prev {
+        left: 0 !important;
+    }
+
+    .popup-form{
+        top: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+    }
+    .popup-form .close-btn{
+        top: 0%;
+        font-size: 35px;
+    }
+
+    /* CSS For Header  Section*/
+
+    .header_section {
+        left: 20px;
+        right: 20px;
+        top: 30px;
+    }
+
+    .header_section img {
+        width: 100%;
+    }
+
+    .navbar {
+        background: none;
+        padding: 0 !important;
+    }
+
+    .offcanvas-backdrop {
+        height: 115vh !important;
+    }
+
+    .navbar-toggler {
+        font-size: 25px !important;
+        color: black;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+
+    .offcanvas-header img {
+        width: 60%;
+    }
+
+    .offcanvas {
+        width: 300px !important;
+    }
+
+    /*CSS For Hero Section*/
+
+    .hero_section_background {
+        padding-top: 130px !important;
+    }
+
+    .hero_section .row {
+        gap: 35px;
+    }
+
+    .hero_section {
+        padding-top: 0px;
+    }
+
+    .hero_section_heading h1 {
+        font-size: 37px;
+        line-height: 47px;
+    }
+
+    .hero_section_left {
+        padding-left: 20px;
+        top: 0;
+    }
+
+    .hero_section_content p {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+
+    .hero_section_img img {
+        width: 100%;
+    }
+
+    .hero_section_content p br {
+        display: none;
+    }
+
+    /*CSS For From Schoolbooks To Soul Healing Section */
+
+    .from_schoolbooks_to_soul_healing_section .row {
+        gap: 15px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section {
+        margin: 40px 0px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_text br {
+        display: none;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_img img {
+        border-radius: 40px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part {
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .from_schoolbooks_to_soul_healing_section_right_part_points li {
+        font-size: 18px;
+        padding-bottom: 5px;
+        line-height: 28px;
+    }
+
+    /* CSS For Number Speak Louder Than Doubts Sectio */
+
+
+    .number_speak_louder_than_doubts_section .row {
+        gap: 15px;
+    }
+
+    .number_speak_louder_than_doubts_section {
+        margin: 40px 0px;
+
+    }
+
+    .number_speak_louder_than_doubts_heading {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .number_speak_louder_than_doubts_section .number_speak_louder_than_doubts_heading .heading_content {
+        font-size: 18px;
+        line-height: 23px;
+        padding: 10px 0px 10px;
+    }
+
+    .number_speak_louder_than_doubts_box {
+        padding: 15px 0px 0px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .number_speak_louder_than_doubts_section .heading {
+        font-size: 28px;
+        padding-bottom: 0;
+    }
+
+    .number_speak_louder_than_doubts_box_heading .heading_content {
+        padding-bottom: 0;
+    }
+
+    .number_speak_louder_than_doubts_box_img img {
+        width: 40%;
+    }
+
+    /*CSS For Pick Your Tharapy Section*/
+
+    .pick_your_tharapy_section .row {
+        gap: 15px;
+    }
+
+    .pick_your_tharapy_section_box2 {
+        margin-bottom: 0px;
+    }
+
+    .pick_your_tharapy_section_heading {
+        margin-bottom: 0px;
+    }
+
+    .pick_your_tharapy_section_box_content {
+        left: 25px;
+        right: 25px;
+        font-size: 21px;
+    }
+
+    .pick_your_tharapy_section_box_content p {
+        font-size: 20px;
+    }
+
+    .pick_your_tharapy_section_box_heading {
+        font-size: 28px;
+        line-height: 38px;
+        padding-bottom: 10px;
+    }
+
+    .pick_your_tharapy_section_box5 {
+        padding: 20px;
+        margin-top: 0px;
+    }
+
+    .pick_your_tharapy_section_box_information {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .pick_your_tharapy_section_box_link {
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+
+    .pick_your_tharapy_section_box1 {
+        background-position: right;
+    }
+
+    .pick_your_tharapy_section_box4 {
+        background-position: 30%;
+    }
+
+    .pick_your_tharapy_section_box_link a {
+        font-size: 18px;
+    }
+
+    .pick_your_tharapy_section br {
+        display: none;
+    }
+
+    .pick_your_tharapy_section .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        opacity: 0;
+        /* make icon invisible */
+        pointer-events: none;
+        /* optional: stop the icon itself from intercepting clicks */
+    }
+
+    .pick_your_tharapy_section .carousel-control-prev,
+    .carousel-control-next {
+        width: 100%;
+        /* optional: make whole area clickable */
+        background: transparent;
+        border: none;
+    }
+
+
+    /*CSS For Expert Secton */
+
+    .expert_section .container-fluid {
+        padding: 0px 12px !important;
+    }
+
+    .expert_section {
+        margin: 40px 0px;
+    }
+
+    .expert_section .heading_content br {
+        display: none;
+    }
+
+    .expert_section .expert_carousel {
+        margin-left: 0px;
+    }
+
+    .expert_carousel .card-content .doctor_name {
+        font-size: 18px;
+    }
+
+    .expert_carousel .card-content .doctor_details .name_tharapy {
+        font-size: 16x;
+    }
+
+    .expert_carousel .card-content .doctor_details .doctor_degree {
+        font-size: 18px;
+    }
+
+    /* CSS For From Swara Heart Section*/
+
+    .from_swara_heart_section .row {
+        gap: 15px;
+    }
+
+    .from_swara_heart_section_left_part {
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .from_swara_heart_section img {
+        border-radius: 40px !important;
+    }
+
+    .from_swara_heart_section_left_part_points p {
+        margin-bottom: 5px;
+        display: flex;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /*CSS For Testimonial Section */
+
+    .carousel-container {
+        margin-left: 0 !important;
+    }
+
+    .testimonial_section {
+        margin: 40px 0px;
+        overflow-x: hidden !important;
+    }
+
+    .testimonial_heading {
+        margin-bottom: 10px;
+    }
+
+    .testimonial_section {
+        margin-bottom: 40px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 25% !important;
+    }
+
+    .testimonial_section .card-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .testimonial_section .card-text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .play_icon img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .play_icon {
+        top: 35%;
+    }
+
+
+    .testimonial_section .card-img-overlay {
+        position: relative;
+        padding: 10px !important;
+        text-align: center !important;
+    }
+
+    /*CSS For Slide Review Section */
+
+    .support_company_section .container-fluid {
+        padding: 0 !important;
+    }
+
+    .slide_review {
+        margin-left: 0 !important;
+    }
+
+    .sliding_review_box {
+        padding: 20px;
+        width: 350px;
+    }
+
+    .sliding_review_box_content {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .sliding_review_1,
+    .sliding_review_2 {
+        gap: 20px;
+    }
+
+    .sliding_review_section_heading {
+        margin-bottom: 10px;
+    }
+
+    .slider-wrapper::before,
+    .slider-wrapper::after {
+        width: 15%;
+    }
+
+    .support_company_section .heading_content br {
+        display: none;
+    }
+
+    .sliding_review_box_personal_info {
+        padding-top: 20px;
+    }
+
+    .sliding_review_box_personal_info p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    /*CSS For Support Company Section */
+
+    .support_company_section {
+        margin: 40px 0px;
+        padding: 40px 0px !important;
+        overflow-x: hidden !important;
+    }
+
+    .support_company_section .slick-slide {
+        padding-right: 50px;
+    }
+
+    .support_company_sliding_logo img{
+        width: 200p;
+    }
+    .support_company_section .heading_content {
+        line-height: 25px;
+    }
+
+    /*CSS For Blog Section */
+
+    .blog_section a {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    /*CSS For Blog Section */
+    .blog_section_heading_left .heading_content br {
+        display: none;
+    }
+
+    .blog_section_heading {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+        padding-bottom: 0px;
+        margin-bottom: 0;
+    }
+
+    .blog_box {
+        border-radius: 15px;
+        border: 1px solid rgba(51, 102, 102, 1);
+        padding: 15px;
+    }
+
+    .blog_heading {
+        font-size: 24px;
+        line-height: 26px;
+        padding-top: 10px;
+    }
+
+    .blog_content br {
+        display: none;
+    }
+
+    .blog_content {
+        padding-top: 0;
+        padding-bottom: 5px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .blog_btn {
+        font-size: 18px;
+    }
+
+    /*CSS For Book Free Session Section */
+
+    .book_free_session_section {
+        margin: 40px 0;
+    }
+
+    .book_free_session_box {
+        padding: 20px;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+        border-radius: 30px;
+    }
+
+    .book_free_session_box_heading {
+        font-size: 27px;
+        line-height: 35px;
+        padding-bottom: 10px;
+    }
+
+    .book_free_session_box_content {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .book_free_session_box_content br {
+        display: none;
+    }
+
+    /*CSS For Footer Section */
+
+    .footer_section {
+        padding: 20px;
+    }
+
+    .footer_section .container {
+        padding: 15px 30px !important;
+        border-radius: 35px;
+    }
+
+    .footer_logo_content br {
+        display: none;
+    }
+
+    .footer_logo_content {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .footer_section .footer_section .row {
+        gap: 15px;
+    }
+
+    .footer_link_heading {
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .footer_link {
+        padding-bottom: 5px;
+    }
+
+    .footer_link a {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .footer_about_part {
+        padding-bottom: 20px !important;
+    }
+
+    .footer_contact_detail p {
+        font-size: 18px;
+    }
+
+    .footer_subscribe {
+        padding-top: 0px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer_subscribe input {
+        padding: 5px 13px 5px 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer_section button {
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        padding: 8px 14px !important;
+        width: 100%;
+    }
+
+    .copyright_section {
+        padding-top: 30px !important;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .copyrigt_detail {
+        font-size: 18px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .footer_social_media_icon a i {
+        height: 45px;
+        width: 45px;
+        font-size: 18px;
+    }
+
+}
+
+/***************************************************************CSS For About Us Page*******************************************************************************************************************/
+
+
+/* CSS For Common*/
+
+.common_header {
+    top: 40px;
+}
+
+.common_header .navbar-toggler{
+    color: rgba(255, 255, 255, 1) !important;
+    border: 1px solid rgba(255, 255, 255, 1) !important;
+    border-radius: 8px !important;
+}
+
+
+.common_header .offcanvas-header .btn-close:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.common_hero_section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 165px 0px 65px !important;
+    border-bottom-left-radius: 130px;
+    /* border-bottom-right-radius: 130px; */
+}
+
+.common_hero_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom, rgb(255 255 255) 0%, rgb(102 153 153 / 62%) 100%);
+    z-index: 8;
+    border-bottom-left-radius: 130px;
+    /* border-bottom-right-radius: 130px; */
+}
+
+.common_hero_section_heading {
+    position: relative;
+    z-index: 8;
+}
+
+.common_hero_section_heading h1 {
+    font-size: 64px;
+    font-family: rockwell;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(41,41,41,1);
+    margin: 0;
+}
+
+.common_hero_section_subheading {
+    font-size: 26px;
+    font-family: 'causten';
+    color: rgba(41,41,41,1);
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+    line-height: 36px;
+}
+
+.common_hero_section_subheading a {
+    color: rgba(41,41,41,1);
+}
+
+.common_hero_section_subheading i {
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+
+.contact_form input {
+    width: 100%;
+    border-radius: 19px;
+    padding: 9px 13px 9px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    font-family: causten !important;
+    font-size: 18px !important;
+    text-transform: capitalize !important;
+    color: rgba(41, 41, 41, 1) !important;
+    margin: 15px 0px;
+    line-height: 35px;
+
+}
+
+.contact_form textarea {
+    width: 100%;
+    border-radius: 19px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 1) !important;
+    border: none;
+    font-family: causten !important;
+    font-size: 22px !important;
+    text-transform: capitalize !important;
+    color: rgba(41, 41, 41, 1) !important;
+    margin: 15px 0px;
+    line-height: 35px;
+
+}
+
+.contact_form button {
+    font-family: causten !important;
+    font-size: 22px !important;
+    border-radius: 15px !important;
+    width: 100%;
+    color: rgba(240, 240, 240, 1);
+    text-transform: uppercase !important;
+    background-color: rgba(51, 102, 102, 1);
+    padding: 10px 0px !important;
+    border: none;
+    margin-top: 15px !important;
+    line-height: 33px;
+    letter-spacing: 3px;
+}
+
+/*CSS For About Us Hero Section*/
+
+.aboutus_hero_section {
+    background-image: url('public/assets/Images/aboutus_hero_section_img.webp');
+}
+
+/*CSS For About Us */
+
+.welcome_section {
+    margin: 100px 0px;
+}
+
+.welcome_section .aboutus_heading {
+    font-family: rockwell;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: capitalize;
+    margin: 0;
+    /* color: rgba(255, 255, 255,0 ); */
+}
+
+.welcome_section .aboutus_subheading {
+    font-family: causten;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0;
+    /* color: rgba(255, 255, 255, 0); */
+}
+
+
+.welcome_section_right_part .welcome_section_heading {
+    /* background-color: rgba(51, 102, 102, 1); */
+    border-radius: 60px;
+}
+
+.welcome_section_right_part {
+    margin-left: 80px;
+}
+
+.aboutus_heading span {
+    font-family: poorrichard;
+}
+
+.aboutus_heading span img {
+    animation: beat 1.5s ease-in-out infinite;
+}
+
+
+@keyframes beat {
+    from {
+        transform: scale(1.1)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
+}
+
+.aboutus_subtitle {
+    font-family: rockwell;
+    font-size: 38px;
+    line-height: 48px;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.aboutus_content1 {
+    font-size: 26px;
+    line-height: 36px;
+    /* color: rgba(255, 255, 255, 0); */
+    margin: 0;
+    font-family: causten;
+    padding-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+
+.aboutus_content {
+    font-size: 26px;
+    line-height: 36px;
+    /* color: rgba(255, 255, 255, 0); */
+    margin: 0;
+    font-family: causten;
+    padding-bottom: 60px;
+}
+
+.welcome_section_left_part img {
+    width: 100%;
+    max-height: 800px;
+    height: auto;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+.welcome_section_right_part_ponints li {
+    font-family: caustensemibold;
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 14px;
+}
+
+.welcome_section_right_part_images img {
+    border-radius: 60px;
+}
+
+/*CSS For Abut Us Service Section*/
+
+.aboutus_service_section_heading {
+    margin-bottom: 50px;
+}
+
+.service_box {
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.service_box_heading {
+    font-family: rockwell;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: capitalize;
+    padding: 15px 0px;
+    margin: 0;
+}
+
+.service_box_content {
+    font-family: causten;
+    font-size: 26px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.service_box:hover {
+    background-color: rgba(51, 102, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+/*CSS For About Us Number Section */
+
+.aboutus_number_section {
+    margin: 100px 0px;
+}
+
+
+.aboutus_number_section .heading span{
+    font-family: causten;
+}
+
+.aboutus_number_section_left_part img {
+    width: 100%;
+    max-height: 806px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.aboutus_number_section_right_part {
+    margin-left: 80px;
+}
+
+.aboutus_number_section_right_part .heading {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.number_section_main_box {
+    padding-top: 30px;
+}
+
+.number_section_main_box .row .col-lg-6 {
+    padding: 0 !important;
+}
+
+.number_section_box {
+    padding: 20px 0px;
+    color: rgba(41, 41, 41, 1);
+}
+
+.number_section_main_box .row .col-lg-6:nth-child(1) .number_section_box {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.number_section_main_box .row .col-lg-6:nth-child(2) .number_section_box {
+    border-bottom: 1px solid black;
+}
+
+.number_section_main_box .row .col-lg-6:nth-child(3) .number_section_box {
+    border-right: 1px solid black;
+}
+
+.number_section_box .heading {
+    padding: 0;
+}
+
+
+/*CSS For About Us Conatact Section */
+
+.aboutus_contact_section {
+    margin: 100px 0px;
+    background-color: rgba(102, 153, 153, 1);
+}
+
+.aboutus_contact_section_left_part {
+    border-radius: 60px;
+    padding: 70px;
+}
+
+.aboutus_contact_section_heading {
+    padding-bottom: 40px;
+}
+
+.aboutus_contact_section_heading .heading {
+    color: rgba(255, 255, 255, 1);
+    text-transform: capitalize;
+}
+
+.aboutus_contact_section_heading .heading_content {
+    color: rgba(255, 255, 255, 1);
+    text-transform: capitalize;
+}
+
+
+.aboutus_contact_section_right_part {
+    height: 100%;
+    padding: 70px;
+}
+
+.aboutus_contact_section_right_part .card img {
+    height: 100%;
+}
+
+/*CSS Foe About Us Sliding Review Section*/
+
+.about_us_sliding_review {
+    margin-bottom: 100px;
+}
+
+/*CSS For Footer Section */
+
+.about_us_footer {
+    margin-top: 100px;
+}
+
+
+/*CSS For Responsive About Us Page*/
+
+/*CSS For Screen between 1200px to 1599px*/
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+
+
+    /*CSS For Hero And Header Section*/
+    .common_header {
+        top: 30px;
+    }
+
+    .common_hero_section_heading h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .common_hero_section_subheading {
+        padding-top: 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /*CSS For Welcome Section*/
+
+    .welcome_section {
+        margin: 80px 0px;
+    }
+
+    .welcome_section_right_part {
+        margin-left: 40px;
+    }
+
+    .welcome_section .aboutus_subheading {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .welcome_section .aboutus_heading {
+        font-size: 45px;
+        line-height: 55px
+    }
+
+    .aboutus_subtitle {
+        font-size: 32px;
+        line-height: 42px;
+        padding-bottom: 0px;
+    }
+
+    .aboutus_content1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .aboutus_content {
+        font-size: 22px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+
+    /*Services Section CSS */
+
+    .aboutus_service_section_heading {
+        margin-bottom: 30px;
+    }
+
+    .service_box_heading {
+        font-size: 22px;
+        line-height: 32px;
+        padding: 8px 0;
+    }
+
+    .service_box_content {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /*About Us Number Section CSS*/
+
+    .aboutus_number_section {
+        margin: 80px 0px;
+    }
+
+    .aboutus_number_section_right_part {
+        margin-left: 30px;
+    }
+
+    .aboutus_number_section_right_part .heading_content {
+        line-height: 30px;
+    }
+
+    .number_section_main_box {
+        padding-top: 45px;
+    }
+
+    .aboutus_number_section_left_part {
+        max-height: 480px;
+        height: 100%;
+    }
+
+    /*About Us Contact Section CSS*/
+
+    .aboutus_contact_section_heading {
+        padding-bottom: 20px;
+    }
+
+    .aboutus_contact_section_left_part {
+        padding: 30px;
+    }
+
+    .contact_form input {
+        font-size: 15px !important;
+        line-height: 25px !important;
+        margin: 12px 0px !important;
+    }
+
+    .contact_form button {
+        margin-top: 10px;
+    }
+
+    .aboutus_contact_section_right_part {
+        padding: 40px;
+    }
+
+    .about_us_sliding_review {
+        margin-bottom: 80px;
+    }
+
+
+}
+
+/*CSS For Screen between 992px to 1199px*/
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    /*Welcome Section CSS*/
+
+    .welcome_section {
+        margin: 60px 0px;
+    }
+
+    .welcome_section .aboutus_subheading {
+        text-align: center;
+    }
+
+    .welcome_section .aboutus_heading {
+        text-align: center;
+    }
+
+    .aboutus_subtitle {
+        text-align: center;
+    }
+
+    .welcome_section .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .welcome_section_right_part {
+        margin-left: 0px;
+    }
+
+    .welcome_section_right_part_images img {
+        display: none;
+    }
+
+    /*CSS For About Us Srevice Section*/
+
+    .aboutus_service_section_heading {
+        margin-bottom: 30px;
+    }
+
+    /*CSS For About Us Number Section*/
+
+    .aboutus_number_section {
+        margin: 60px 0px;
+    }
+
+    .aboutus_number_section_right_part {
+        margin-left: 0px;
+    }
+
+    .number_section_main_box {
+        padding-top: 30px;
+    }
+
+    /*CSS For About Us Contact Section*/
+
+    .aboutus_contact_section_left_part {
+        padding: 40px 0px;
+    }
+
+    .aboutus_contact_section_heading {
+        padding-bottom: 20px;
+    }
+
+    .aboutus_contact_section_right_part {
+        padding: 40px 0px;
+    }
+
+    .about_us_sliding_review {
+        margin-bottom: 60px;
+    }
+
+}
+
+/*CSS For Screen between 768px to 991px*/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    /*Welcome Section CSS*/
+
+    .welcome_section {
+        margin: 60px 0px;
+    }
+
+    .welcome_section .aboutus_subheading {
+        text-align: center;
+    }
+
+    .welcome_section .aboutus_heading {
+        text-align: center;
+    }
+
+    .aboutus_subtitle {
+        text-align: center;
+    }
+
+    .welcome_section .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .welcome_section_right_part {
+        margin-left: 0px;
+    }
+
+    .welcome_section_right_part_images img {
+        display: none;
+    }
+
+    /*CSS For About Us Service Section*/
+
+    .aboutus_service_section_heading {
+        margin-bottom: 20px;
+    }
+
+    /*CSS For About Us Number Section*/
+
+    .aboutus_number_section {
+        margin: 60px 0px;
+    }
+
+    .aboutus_number_section .main_row {
+        flex-direction: column-reverse !important;
+    }
+
+    .aboutus_number_section_right_part {
+        margin-left: 0;
+    }
+
+    .number_section_main_box {
+        padding-top: 25px;
+    }
+
+    /*CSS For About Us Contact Section*/
+
+    .aboutus_contact_section_left_part {
+        padding: 30px 0px;
+    }
+
+    .aboutus_contact_section_heading {
+        padding-bottom: 25px;
+    }
+
+    .aboutus_contact_section_right_part {
+        padding: 30px 0px;
+    }
+
+    .about_us_sliding_review {
+        margin-bottom: 60px;
+    }
+}
+
+/*CSS For Screen Max 600px*/
+
+@media screen and (max-width:600px) {
+
+    /*Hero And Header Section Of About Us */
+
+    .common_hero_section_heading h1 {
+        font-size: 40px;
+    }
+
+    .common_hero_section_subheading {
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+    .common_hero_section {
+        padding: 130px 0px 30px !important;
+        border-bottom-left-radius: 80px;
+    }
+
+    .common_hero_section::before{
+        border-bottom-left-radius: 80px;
+    }
+
+    /*Welcome Section CSS*/
+
+    .welcome_section {
+        margin: 40px 0px;
+    }
+
+    .welcome_section .aboutus_heading {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .aboutus_subtitle {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .welcome_section .aboutus_subheading {
+        text-align: center;
+    }
+
+    .welcome_section .aboutus_heading {
+        text-align: center;
+    }
+
+    .aboutus_subtitle {
+        text-align: center;
+    }
+
+    .welcome_section .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .welcome_section_right_part {
+        margin-left: 0px;
+    }
+
+    .welcome_section_right_part_images img {
+        display: none;
+    }
+
+    .aboutus_content1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+    .aboutus_content {
+        font-size: 22px;
+        line-height: 30px;
+        padding-bottom: 25px;
+    }
+
+    .welcome_section_left_part img {
+        border-radius: 30px;
+    }
+
+    /*CSS For Service Of About Us*/
+
+    .aboutus_service_section_heading {
+        margin-bottom: 15px;
+    }
+
+    .service_box {
+        padding: 10px 0px;
+    }
+
+    .service_box_heading {
+        font-size: 26px;
+        line-height: 34px;
+        padding: 10px 0px;
+    }
+
+    .service_box_content {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
+    /*CSS For About Us Number Section*/
+
+    .aboutus_number_section .main_row {
+        flex-direction: column-reverse !important;
+    }
+
+    .aboutus_number_section {
+        margin: 40px 0px;
+    }
+
+    .aboutus_number_section_right_part {
+        margin-left: 0px;
+    }
+
+    .aboutus_number_section_left_part img {
+        border-radius: 30px;
+    }
+
+    .number_section_main_box {
+        padding-top: 20px;
+    }
+
+    /*CSS For About Us Contact Section*/
+
+    .aboutus_contact_section_heading {
+        padding-bottom: 20px;
+    }
+
+    .aboutus_contact_section {
+        margin: 40px 0px;
+    }
+
+    .aboutus_contact_section_left_part {
+        padding: 30px 0px;
+    }
+
+    .aboutus_contact_section_right_part {
+        padding: 30px 0px;
+    }
+
+    .contact_form input {
+        margin: 10px 0px !important;
+    }
+
+    .contact_form textarea {
+        margin: 10px 0px;
+    }
+
+    .about_us_sliding_review {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+/********************************************************************CSS For Services Page******************************************************************************************************/
+.service_section {
+    margin: 100px 0px;
+}
+
+/*CSS For Service Section Of Service Page*/
+
+
+.service_section .row {
+    margin-bottom: 90px !important;
+}
+
+.service_section .service_section_img {
+    height: 100%;
+}
+
+.service_hero_section {
+    background-image: url('public/assets/Images/expert_section_hero_img.webp')
+}
+
+.service_section .service_section_img img {
+    width: 100%;
+    border-radius: 60px;
+    height: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+.service_section_detail {
+    margin: 0px 50px;
+}
+
+.service_section_detail .service_section_detail_heading {
+    font-family: rockwell;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.service_section_detail_content {
+    font-family: causten;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.service_section_detail_btn {
+    background-color: rgba(51, 102, 102, 1);
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: capitalize;
+}
+
+.service_section_detail_btn:hover {
+    background-color: #ff6666;
+    transition: all 0.3s ease-in-out;
+}
+
+/*CSS For Responsive Services Page*/
+
+/*CSS For Screen between 1200px to 1599px*/
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+
+
+    /*CSS For Hero And Header Section*/
+    .common_header {
+        top: 30px;
+    }
+
+    .common_hero_section_heading h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .common_hero_section_subheading {
+        padding-top: 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /*CSS For Services*/
+
+    .service_section {
+        margin: 80px 0px;
+    }
+
+    .service_section .row {
+        margin-bottom: 80px !important;
+    }
+
+    .service_section .service_section_img img {
+        max-height: 385px;
+        height: 100%;
+    }
+
+    .service_section_detail .service_section_detail_heading {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .service_section_box {
+        margin-bottom: 70px;
+    }
+
+    .service_section_detail {
+        margin: 0px 10px 0px 50px;
+    }
+
+    .service_section_detail_content {
+        font-size: 18px;
+        line-height: 26px;
+        padding-top: 10px;
+    }
+
+    .service_section_detail_btn {
+        margin-top: 20px;
+        padding: 8px 25px;
+    }
+}
+
+
+/*CSS For Screen From 1500px To 1599px*/
+
+@media screen and (min-width:1500px) and (max-width:1599px) {
+
+
+    .service_section_detail_content {
+        font-size: 22px;
+        line-height: 28px;
+        padding-top: 20px;
+    }
+
+    .service_section_detail_btn {
+        margin-top: 30px;
+    }
+
+
+
+}
+
+/*CSS For Screen From 992px To 1199px*/
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    /*CSS For Services*/
+
+    .service_section {
+        margin: 60px 0px;
+    }
+
+    .service_section .container .row:nth-child(1) {
+        flex-direction: column-reverse !important;
+    }
+
+    .service_section .container .row:nth-child(3) {
+        flex-direction: column-reverse !important;
+    }
+
+    .service_section .row {
+        margin-bottom: 65px !important;
+    }
+
+    .service_section_detail {
+        margin: 0px 20px 20px;
+    }
+
+
+}
+
+
+/*CSS For Screen From 992px To 1199px*/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    /*CSS For Services*/
+
+    .service_section {
+        margin: 60px 0px;
+    }
+
+
+    .service_section .container .row:nth-child(1) {
+        flex-direction: column-reverse !important;
+    }
+
+    .service_section .container .row:nth-child(3) {
+        flex-direction: column-reverse !important;
+    }
+
+    .service_section .row {
+        margin-bottom: 65px !important;
+    }
+
+    .service_section_detail {
+        margin: 0px 20px 20px;
+    }
+
+    .service_section_detail_btn {
+        margin-top: 25px;
+    }
+
+    .service_section_detail_content {
+        padding-top: 15px;
+    }
+}
+
+/*CSS For Screen Below 600px*/
+
+@media screen and (max-width:600px) {
+
+    /*CSS For Services*/
+
+    .service_section {
+        margin: 40px 0px;
+        text-align: center;
+    }
+
+    .service_section_detail {
+        margin: 0px 0px 20px;
+    }
+
+    .service_section .container .row:nth-child(1) {
+        flex-direction: column-reverse !important;
+    }
+
+    .service_section .container .row:nth-child(3) {
+        flex-direction: column-reverse !important;
+    }
+
+    .service_section .row {
+        margin-bottom: 45px !important;
+    }
+
+    .service_section_detail .service_section_detail_heading {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .service_section_detail_content {
+        font-size: 22px;
+        padding-top: 10px;
+        line-height: 30px;
+    }
+
+    .service_section .service_section_img img {
+        border-radius: 30px;
+    }
+
+    .service_section_detail_btn {
+        margin-top: 25px;
+    }
+}
+
+
+
+
+/******************************************************************************CSS For Experet Page*******************************************************************************************/
+
+/*CSS For Hero Section*/
+
+.expert_hero_section {
+    background-image: url('public/assets/Images/expert_section_hero_img.webp');
+}
+
+
+/*CSS For Expert Profile Section*/
+
+.expert_proflie_section {
+    margin: 100px 0px;
+}
+
+.expert_box_spacing {
+    padding-bottom: 50px;
+}
+
+.expert_proflie_box {
+    border-radius: 60px;
+    position: relative;
+    padding: 0px 60px;
+}
+
+.expert_proflie_img {
+    position: relative;
+}
+
+.expert_proflie_img:hover .expert_proflie_img_btn {
+    opacity: 1;
+}
+
+.expert_proflie_img img {
+    object-fit: cover;
+    max-height: 360px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.expert_proflie_img a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.expert_team_proflie {
+    margin-top: 20px;
+}
+
+.expert_team_proflie .expert_name {
+    font-family: rockwell;
+    font-size: 26px;
+    margin: 0;
+}
+
+.expert_team_proflie .expert_name a {
+    color: rgba(41, 41, 41, 1);
+}
+
+.expert_team_proflie .expert_degree {
+    font-family: causten;
+    font-size: 20px;
+    color: rgba(41, 41, 41, 1);
+    margin-top: 5px;
+    margin-bottom: 0px;
+    line-height: 30px;
+}
+
+.expert_proflie_img_btn {
+    background-color: rgba(51, 102, 102, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 20px;
+    font-size: 20px;
+    line-height: 25px;
+    z-index: 9;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.expert_proflie_img_btn:hover {
+    background-color: rgba(255, 102, 102, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.expert_proflie_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.expert_proflie_img:hover::before {
+    opacity: 1;
+}
+
+/*CSS For Responsive Expert Page*/
+
+/*CSS For Screen From 1200px to 1599px */
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+
+    .expert_proflie_section {
+        margin: 80px 0px;
+    }
+
+    .expert_team_proflie {
+        margin-top: 10px;
+    }
+
+    .expert_proflie_box {
+        padding: 0px 50px;
+    }
+
+    .expert_team_proflie .expert_name {
+        font-size: 24px;
+    }
+
+    .expert_team_proflie .expert_degree {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .expert_box_spacing {
+        padding-bottom: 30px;
+    }
+
+    .expert_proflie_img_btn {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+}
+
+/*CSS For Screen From 992px to 1199px */
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    .expert_proflie_section {
+        margin: 60px 0px;
+    }
+
+    .expert_team_proflie {
+        margin-top: 10px;
+    }
+
+    .expert_proflie_box {
+        padding: 0px 35px;
+    }
+
+    .expert_team_proflie .expert_name {
+        font-size: 22px;
+    }
+
+    .expert_team_proflie .expert_degree {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .expert_box_spacing {
+        padding-bottom: 30px;
+    }
+
+    .expert_proflie_img_btn {
+        padding: 7px 9px;
+        font-size: 15px;
+    }
+}
+
+/*CSS For Screen Between 768px and 992px*/
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .expert_proflie_section {
+        margin: 60px 0px;
+    }
+
+    .expert_team_proflie {
+        margin-top: 10px;
+    }
+
+    .expert_proflie_box {
+        padding: 0px 30px;
+    }
+
+    .expert_team_proflie .expert_name {
+        font-size: 24px;
+    }
+
+    .expert_team_proflie .expert_degree {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .expert_box_spacing {
+        padding-bottom: 30px;
+    }
+
+    .expert_proflie_img_btn {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+}
+
+/* CSS For Screen Below 600px*/
+
+
+@media screen and (max-width:600px) {
+
+    .expert_proflie_section {
+        margin: 40px 0px;
+    }
+
+    .expert_team_proflie {
+        margin-top: 10px;
+    }
+
+    .expert_proflie_box {
+        padding: 0px;
+    }
+
+    .expert_team_proflie .expert_name {
+        font-size: 24px;
+    }
+
+    .expert_team_proflie .expert_degree {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .expert_box_spacing {
+        padding-bottom: 30px !important;
+    }
+
+    .expert_proflie_img_btn {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+}
+
+/**************************************************************************************RESOURCE PAGE CSS******************************************************************************************/
+
+/*CSS For Hero And Header Section*/
+
+.resource_hero_section {
+    background-image: url('public/assets/Images/resource_section_hero_img.webp');
+}
+
+/*CSS For Resource Blog Section*/
+
+.resource_blog_section {
+    margin: 100px 0px;
+}
+
+.resource_blog_section .resource_blog_box {
+    border: 1px solid rgba(102, 153, 153, 1);
+    padding: 18px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.resource_blog_section .resource_blog_box:hover {
+    border: 1px solid rgba(255, 102, 102, 1);
+    transition: all 0.4s ease-in-out;
+}
+
+.blog_section_spacing {
+    padding-bottom: 25px;
+}
+
+/*CSS For Responisve RESOURCE Page*/
+
+/*CSS For Screen Between 1200px to 1599px*/
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+
+    .resource_blog_section {
+        margin: 80px 0px;
+    }
+
+}
+
+/*CSS For Screen Between 992px to 1199px*/
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    .resource_blog_section {
+        margin: 60px 0px;
+    }
+}
+
+/*CSS For Screen Between 768px to 991px*/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .resource_blog_section {
+        margin: 60px 0px;
+    }
+}
+
+/*CSS For Screen below 600px*/
+
+@media screen and (max-width:600px) {
+
+    .resource_blog_section {
+        margin: 40px 0px;
+    }
+
+    .blog_content {
+        padding-bottom: 15px;
+    }
+}
+
+/***************************************************************************CSS FOr BLOGS Pages******************************************************************************************************************/
+
+
+/*CSS For Single Blog Page Hero Section*/
+.singleblog_hero_section {
+    background-image: url('public/assets/images/single_blog_hero.webp');
+}
+
+
+/*CSS FOr Single Blog Section*/
+.single_blog_section {
+    margin: 100px 0px;
+}
+
+.singlblog_box {
+    padding: 50px;
+}
+
+.singleblog_box_date {
+    margin-top: 10px;
+}
+
+.singleblog_box_date  span{
+    font-size: 20px !important;
+    font-family: caustensemibold !important;
+ }
+
+ .singleblog_box_date  span i{
+    padding-right: 8px;
+ }
+
+.singlblog_box img {
+    width: 100%;
+    max-height: 750px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.singleblog_box_heading {
+    margin-top: 20px;
+}
+
+.singleblog_box_heading .heading {
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.singleblog_box_content .singleblog_box_information {
+    padding-bottom: 20px;
+    font-family: causten;
+    font-size: 21px;
+    line-height: 31px;
+    margin: 0;
+}
+
+.singleblog_box_content .subheading {
+    font-size: 30px;
+    font-family: rockwell;
+    line-height: 40px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.singleblog_box_content .singleblog_box_points li {
+    font-family: causten;
+    font-size: 21px;
+    line-height: 31px;
+}
+
+.singleblog_form {
+    margin: 50px 0px;
+    padding: 30px;
+    background-color: rgba(102, 153, 153, 1);
+    border-radius: 30px;
+}
+
+.singleblog_form_heading {
+    color: rgba(255, 255, 255, 1);
+    font-family: rockwell;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.singleblog_service {
+    background-color: rgba(102, 153, 153, 1);
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.singleblog_service .singleblog_service_heading {
+    text-align: left;
+    font-family: rockwell;
+    font-size: 38px;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 15px;
+}
+
+.singleblog_service .singleblog_service_link {
+    list-style: none;
+    font-family: causten;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 10px 0px;
+}
+
+.singleblog_service .singleblog_service_link a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.singleblog_service .singleblog_service_link a:hover {
+    color: rgba(255, 102, 102, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/*CSS For Responisve BLOGS Page*/
+
+/*CSS For Screen Between 1200px to 1599px*/
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+
+    .single_blog_section {
+        margin: 80px 0px;
+    }
+
+    .singleblog_box_heading .heading {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .singleblog_box_date h5 {
+        font-size: 18px;
+    }
+
+    .singleblog_box_content .singleblog_box_information {
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 12px;
+    }
+
+    .singleblog_box_content .subheading {
+        font-size: 26px;
+        line-height: 36px;
+        padding-bottom: 15px;
+    }
+
+    .singleblog_box_content .singleblog_box_points li {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .singleblog_service .singleblog_service_link {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 8px 0px;
+    }
+
+    .singleblog_form {
+        padding: 30px 15px;
+    }
+
+    .singleblog_form_heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .singleblog_service .singleblog_service_heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .contact_form button {
+        font-size: 18px !important;
+        letter-spacing: 2px;
+        line-height: 20px;
+        margin-top: 10px !important;
+    }
+}
+
+/*CSS For Screen Between 992px to 1199px*/
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    .single_blog_section {
+        margin: 60px 0px;
+    }
+
+    .resource_single_blog_sectionblog_section {
+        margin: 60px 0px;
+    }
+
+    .singlblog_box {
+        padding: 30px;
+    }
+
+   
+    .singleblog_box_heading .heading {
+        font-size: 38px;
+        padding-bottom: 10px;
+    }
+
+   
+
+    .singleblog_box_content .singleblog_box_information {
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 15px;
+    }
+
+    .singleblog_box_content .subheading {
+        font-size: 26px;
+        line-height: 36px;
+        padding-bottom: 15px;
+    }
+
+    .singleblog_box_content .singleblog_box_points li {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .singleblog_service .singleblog_service_link {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 8px 0px;
+    }
+
+    .singleblog_service {
+        margin-top: 30px;
+    }
+
+    .singleblog_form {
+        padding: 35px 15px;
+    }
+
+    .singleblog_form_heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .singleblog_service .singleblog_service_heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .contact_form button {
+        font-size: 18px !important;
+        letter-spacing: 2px;
+        line-height: 20px;
+        margin-top: 10px !important;
+    }
+
+}
+
+/*CSS For Screen Between 768px to 991px*/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .single_blog_section {
+        margin: 60px 0px;
+    }
+
+    .singlblog_box {
+        padding: 0px;
+    }
+
+    .singleblog_box_heading .heading {
+        font-size: 42px;
+    }
+
+    .singleblog_box_content .singleblog_box_information {
+        font-size: 22px;
+    }
+}
+
+
+/*CSS For Screen below 600px*/
+
+@media screen and (max-width:600px) {
+
+    .single_blog_section {
+        margin: 40px 0px;
+    }
+
+    .singlblog_box {
+        padding: 0px;
+    }
+
+    .singleblog_box_heading .heading {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .singleblog_box_content .singleblog_box_information {
+        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .singleblog_box_content .subheading {
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+
+    .singleblog_box_content .singleblog_box_points li {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .singleblog_form {
+        padding: 30px 0px;
+    }
+
+    .contact_form {
+        padding: 0px 12px;
+    }
+
+    .singleblog_form_heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .singleblog_service .singleblog_service_heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+
+/**************************************************************************************CONTACT PAGE CSS******************************************************************************************/
+
+/*CSS For Hero And Header Section*/
+
+.contact_hero_section {
+    background-image: url('public/assets/Images/contact_section_hero_img.webp');
+    background-position: center;
+}
+
+/*CSS For Connect Section*/
+
+.contact_connect_section {
+    margin: 100px 0px;
+}
+
+.contact_connect_section_right_part {
+    border-radius: 60px;
+    padding: 70px;
+    background-color: rgba(102, 153, 153, 1);
+}
+
+.contact_connect_section_heading {
+    padding-bottom: 40px;
+}
+
+.contact_connect_section_right_part .contact_connect_section_heading .heading {
+    color: rgba(255, 255, 255, 1);
+    text-transform: capitalize;
+}
+
+
+.contact_form input {
+    width: 100%;
+    border-radius: 19px;
+    padding: 9px 13px 9px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    font-family: causten !important;
+    text-transform: capitalize !important;
+    color: rgba(41, 41, 41, 1) !important;
+    margin: 15px 0px;
+    line-height: 35px;
+
+}
+
+.contact_form textarea {
+    width: 100%;
+    border-radius: 19px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 1) !important;
+    border: none;
+    font-family: causten !important;
+    font-size: 20px !important;
+    text-transform: capitalize !important;
+    color: rgba(41, 41, 41, 1) !important;
+    margin: 15px 0px;
+    line-height: 35px;
+
+}
+
+.contact_form button {
+    font-family: causten !important;
+    font-size: 22px !important;
+    border-radius: 15px !important;
+    width: 100%;
+    color: rgba(240, 240, 240, 1);
+    text-transform: uppercase !important;
+    background-color: rgba(51, 102, 102, 1);
+    padding: 10px 0px !important;
+    border: none;
+    margin-top: 15px !important;
+    line-height: 33px;
+    letter-spacing: 3px;
+}
+
+
+
+.contact_connect_section_left_part {
+    padding: 70px;
+}
+
+.contact_connect_section_heading {
+    color: rgba(41, 41, 41, 1);
+    text-transform: capitalize;
+}
+
+.contact_connect_section_left_part .contact_connect_section_heading {
+    padding-bottom: 40px;
+}
+
+
+
+.contact_connect_section_left_part .contact_details p {
+    font-size: 26px;
+    line-height: 36px;
+    font-family: 'causten';
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.contact_connect_section_left_part .contact_details p i {
+    padding-right: 10px;
+    width: 36px;
+}
+
+.contact_connect_section_left_part .contact_details p a {
+    color: rgba(41, 41, 41, 1);
+}
+
+.contact_connect_section_left_part .contact_details p a:hover {
+    color: rgba(255, 102, 102, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/*CS For FAQ Section*/
+
+.faq_section {
+    margin-bottom: 100px;
+}
+
+.faq_section_heading {
+    padding-bottom: 30px;
+    text-transform: capitalize
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(41, 41, 41, 1) !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    font-size: 26px !important;
+    font-family: 'caustensemibold' !important;
+    padding: 25px 20px !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:focus-visible {
+    outline: none !important;
+}
+
+.accordion-body {
+    font-size: 22px !important;
+    font-family: 'causten' !important;
+    padding: 20px 15px !important;
+}
+
+/*CSS For Footer Section */
+
+.about_us_footer {
+    margin-top: 100px;
+}
+
+/* CSS For Responsive Contact Page */
+
+/* CSS For Screen Between 1200px to 1599px */
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+
+    .contact_connect_section {
+        margin: 80px 0px;
+    }
+
+    .contact_connect_section_left_part .contact_connect_section_heading {
+        padding-bottom: 25px;
+    }
+
+    .contact_connect_section_left_part .contact_details p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contact_connect_section_heading .heading {
+        font-size: 42px;
+    }
+
+    .contact_connect_section_right_part {
+        padding: 50px 30px;
+    }
+
+    .contact_form button {
+        font-size: 20px !important;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    .faq_section {
+        margin: 80px 0px;
+    }
+
+    .faq_section_heading .heading {
+        font-size: 42px;
+    }
+
+    .faq_section_heading {
+        padding-bottom: 20px;
+    }
+
+    .accordion-button {
+        font-size: 22px !important;
+    }
+
+    .accordion-body {
+        font-size: 18px !important
+    }
+}
+
+/* CSS For Screen Between 992px to 1199px */
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    .contact_connect_section {
+        margin: 60px 0px;
+    }
+
+    .contact_connect_section_left_part {
+        padding: 40px;
+    }
+
+    .contact_connect_section_left_part .contact_connect_section_heading {
+        padding-bottom: 20px;
+    }
+
+    .contact_connect_section_left_part .contact_details p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .contact_connect_section_heading .heading {
+        font-size: 38px;
+    }
+
+    .contact_connect_section_right_part {
+        padding: 30px;
+        border-radius: 40px;
+    }
+
+    .contact_form button {
+        font-size: 20px !important;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    .faq_section {
+        margin: 60px 0px;
+    }
+
+
+    .faq_section_heading .heading {
+        font-size: 32px;
+    }
+
+    .faq_section_heading {
+        padding-bottom: 15px;
+    }
+
+    .accordion-button {
+        font-size: 22px !important;
+    }
+
+    .accordion-body {
+        font-size: 18px !important
+    }
+}
+
+/* CSS For Screen Between 768px to 991px */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .contact_connect_section {
+        margin: 60px 0px;
+    }
+
+    .contact_connect_section_left_part {
+        padding: 0px 25px 30px 25px;
+    }
+
+    .contact_connect_section_right_part {
+        padding: 40px 25px;
+    }
+
+    .faq_section {
+        margin: 60px 0px;
+    }
+
+    .contact_connect_section_heading {
+        padding-bottom: 25px;
+    }
+}
+
+/* CSS For Screen Below 600px */
+
+@media screen and (max-width:600px) {
+
+    .contact_connect_section {
+        margin: 40px 0px;
+    }
+
+    .contact_connect_section_left_part {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .contact_connect_section_left_part .contact_connect_section_heading {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    .contact_connect_section_left_part .contact_details p {
+        font-size: 22px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+
+    .faq_section {
+        margin-bottom: 40px;
+    }
+
+    .contact_connect_section_heading {
+        padding-bottom: 15px;
+    }
+
+    .contact_connect_section_right_part {
+        padding: 30px 0px;
+        border-radius: 30px;
+    }
+
+    .accordion-button {
+        padding: 20px 10px !important;
+        font-size: 22px !important;
+    }
+}
+
+/*************************************************************************************************************FAQs Page***************************************************************************************************/
+
+
+.faq_hero_section {
+    background-image: url('public/assets/Images/resource_section_hero_img.webp');
+    background-position: center;
+}
+
+.faq_spacing {
+    margin: 100px 0px !important;
+}
+
+
+/* CSS For Responsive Contact Page */
+
+/* CSS For Screen Between 1200px to 1599px */
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+    .faq_spacing {
+        margin: 80px 0px !important;
+    }
+}
+
+/* CSS For Screen Between 992px to 1199px */
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .faq_spacing {
+        margin: 60px 0px !important;
+    }
+}
+
+
+/* CSS For Screen Between 768px to 991px */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .faq_spacing {
+        margin: 60px 0px !important;
+    }
+}
+
+/* CSS For Screen Below 600px */
+
+@media screen and (max-width:600px) {
+    .faq_spacing {
+        margin: 40px 0px !important;
+    }
+}
+
+/**********************************************************************CSS For Privacy & Policy Page******************************************************************************************************/
+
+.privact_policy_section{
+    margin: 100px 0px;
+}
+
+.privact_policy_heading{
+    font-family: rockwell;
+    font-size: 66px;
+    text-transform: capitalize;
+    text-align: start;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.privacy_policy_hero_section{
+    background-image: url('public/assets/Images/contact_section_hero_img.webp');
+    background-position: center;
+}
+
+.privact_policy_content{
+    font-family: causten;
+    font-size: 26px;
+    line-height: 35px;
+    padding-bottom: 18px;
+    margin: 0;
+}
+
+.privact_policy_subheading{
+    font-family: rockwell;
+    font-size: 42px;
+    text-transform: capitalize;
+    text-align: start;
+    padding: 20px 0px;
+    margin: 0;
+}
+
+/* CSS For Responsive Contact Page */
+
+/* CSS For Screen Between 1200px to 1599px */
+
+
+@media screen and (min-width:1200px) and (max-width:1299px) {
+    .privact_policy_section{
+        margin: 80px 0px !important;
+    }
+
+    .privact_policy_heading{
+        font-size: 50px;
+        line-height: 55px;
+        padding-bottom: 18px;
+    }
+
+    .privact_policy_content {
+        font-family: causten;
+        font-size: 24px;
+        line-height:32px;
+        padding-bottom: 15px;
+    }
+    
+    .privact_policy_subheading {
+        font-size: 38px;
+        padding: 15px 0px;
+    }
+
+    
+}
+@media screen and (min-width:1300px) and (max-width:1599px) {
+    .privact_policy_section{
+        margin: 80px 0px !important;
+    }
+
+    .privact_policy_heading{
+        font-size: 55px;
+        line-height: 60px;
+    }
+}
+
+/* CSS For Screen Between 992px to 1199px */
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .privact_policy_section {
+        margin: 60px 0px !important;
+    }
+
+    .privact_policy_heading{
+        font-size: 68px;
+        line-height: 80px;
+    }
+
+}
+
+
+/* CSS For Screen Between 768px to 991px */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .privact_policy_section {
+        margin: 60px 0px !important;
+    }
+
+    .privact_policy_heading{
+        font-size: 58px;
+        line-height: 68px;
+        padding-bottom: 15px;
+    }
+
+    .privact_policy_subheading {
+        padding: 15px 0px;
+    }
+
+    .privact_policy_content {
+        font-size: 24px;
+    }
+}
+
+/* CSS For Screen Below 600px */
+
+@media screen and (max-width:600px) {
+    .privact_policy_section {
+        margin: 40px 0px !important;
+    }
+
+    .privact_policy_heading{
+        font-size: 40px;
+        line-height: 47px;
+        padding-bottom: 18px;
+    }
+    
+    .privact_policy_content{
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .privact_policy_subheading{
+        font-size: 36px;
+        padding: 15px 0px;
+    }
+}
+
+
+/*********************************************************************************************************CSS For TERM & CONDITON Page*********************************************************************************/
+
+.term_condition_hero_section{
+    background-image: url('public/assets/Images/aboutus_hero_section_img.webp');
+}
