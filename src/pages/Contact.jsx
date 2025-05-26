@@ -4,7 +4,7 @@ import Header from "../component/header";
 import Footer from "../component/footer";
 import Q_A from "../component/Q_A";
 
-// 
+
 function Contact() {
   return (
     <>
