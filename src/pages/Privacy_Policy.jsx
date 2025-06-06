@@ -36,7 +36,7 @@ return(
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ut eaque culpa suscipit,
                         aperiam iste iusto inventore ex accusantium nesciunt facere nam architecto nobis in placeat?
                         Magni, quia ipsam! Ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-                        possimus voluptatibus laudantium corrupti maxime fugiat molestias, pariatur modi officiis, aut
+                        possimus voluptatibus laudantium corrupti maxime fugiat pariatur modi officiis, aut
                         architecto quam aspernatur debitis enim veniam doloribus impedit corporis tenetur.
                     </p>
                     <p className="privact_policy_content">
